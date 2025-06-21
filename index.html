@@ -1,21 +1,40 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Jom Finder</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>หาพ่อมึง?</title>
   <style>
     body {
-      background-color: black;
-      color: lime;
-      font-size: 32px;
+      margin: 0;
+      height: 100vh;
+      background-color: #111;
+      color: #0f0;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .message {
+      background: #222;
+      padding: 2rem 3rem;
+      border: 2px solid #0f0;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #0f0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  กดหาพ่อมึงอ่อ
+  <div class="message">กดหาพ่อมึงอ่อ</div>
 </body>
 </html>
